@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OPD.kemopd"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/kem">
+
+            </ImageView>
+            <TextView
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:baselineAligned="false"
+                android:text="Rates for hospital wards at KEM Hospital"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <TextView
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="645dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="General Ward                            Rs.400.00"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="645dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Semi Private Ward                    Rs.850.00(Twin Share)"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="155dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="0dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Private Ward                              Rs.1900.00(Non A/C)"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="645dp"
+                    android:ems="10"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Hosptial Facility                              Rates"
+                    android:textColor="@android:color/holo_blue_dark" />
+
+                <TextView
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="255dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="645dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Private Ward                                Rs.2800.00(Luxeray)"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="205dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="645dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Private Ward                                Rs.2400.00(A/C)"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="305dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="0dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Vitamine D Test                           Rs.1600.00"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/editText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="355dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:ems="10"
+                    android:text="Blood Group Text                         Rs.100.00" />
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/editText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="405dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Lipid Profile                                   Rs.600.00" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

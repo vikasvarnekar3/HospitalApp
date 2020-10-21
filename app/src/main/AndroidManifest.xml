@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hospitalapp">
+    <!-- add internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Facility.bloodbank" />
+        <activity android:name=".Facility.ambulance" />
+        <activity android:name=".Facility.facility" />
+        <activity android:name=".HealthPackage.sanchetihealth" />
+        <activity android:name=".HealthPackage.applohealth" />
+        <activity android:name=".HealthPackage.kemhealth" />
+        <activity android:name=".HealthPackage.dmhhealth" />
+        <activity android:name=".HealthPackage.rubyhealth" />
+        <activity android:name=".HealthPackage.jahangirhealth" />
+        <activity android:name=".HealthPackage.hospitallogohealth" />
+        <activity android:name=".HealthPackage.adityahealth" />
+        <activity android:name=".OPD.hospitallogoodp" />
+        <activity android:name=".OPD.sanchetiopd" />
+        <activity android:name=".OPD.ciplaopd" />
+        <activity android:name=".OPD.apploopd" />
+        <activity android:name=".OPD.kemopd" />
+        <activity android:name=".OPD.dmhopd" />
+        <activity android:name=".OPD.rubyopd" />
+        <activity android:name=".OPD.jahangiropd" />
+        <activity android:name=".OPD.adityaopd" />
+        <activity android:name=".main" />
+        <activity android:name=".IPD.adityaipd" />
+        <activity android:name=".IPD.jahangiripd" />
+        <activity android:name=".IPD.rubyhallipd" />
+        <activity android:name=".IPD.sanchetiipd" />
+        <activity android:name=".IPD.ciplaipd" />
+        <activity android:name=".IPD.kemipd" />
+        <activity android:name=".IPD.ApploIPD" />
+        <activity android:name=".IPD.Deenanathipd" />
+        <activity android:name=".DoctorSpecial.Nephrology" />
+        <activity android:name=".DoctorSpecial.JointAndReplacement" />
+        <activity android:name=".DoctorSpecial.Homopathy" />
+        <activity android:name=".DoctorSpecial.FootAndAnkle" />
+        <activity android:name=".DoctorSpecial.Dentistry" />
+        <activity android:name=".DoctorSpecial.Cancer" />
+        <activity android:name=".DoctorSpecial.Cosmetic" />
+        <activity android:name=".DoctorSpecial.ChildCare" />
+        <activity android:name=".DoctorSpecial.Cardiology" />
+        <activity android:name=".DoctorSpecial.Andrology" />
+        <activity android:name=".IPD.HospitalLogo" />
+        <activity android:name=".DoctorSpecial.AyurvedActivity" />
+        <activity android:name=".DoctorSpecial.DoctorLogoActivity" />
+        <activity android:name=".Login_user" />
+        <activity android:name=".Login_admin" />
+        <activity android:name=".Registration_admin" />
+        <activity android:name=".Registration_user" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

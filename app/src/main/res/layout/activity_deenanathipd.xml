@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IPD.Deenanathipd"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/deenanath">
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:layout_marginTop="3px"
+
+                android:baselineAligned="false"
+                android:text="Admission:-"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="645dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="GS/Old Building" />'
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Location - Ground floor B wing"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="75dp"
+                    android:text="Time - 24/7"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="105dp"
+                    android:text="Direct Contact No. 020 40151019"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="140dp"
+                    android:text="SS/New Building">
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="180dp"
+                    android:text="Location - Behind Reception"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="210dp"
+                    android:text="Time - 7am to 10pm (Sunday closed)"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="241dp"
+                    android:text="Direct Contact No. 020 49153024"
+                    android:textSize="18sp"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Main Building">
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Operatior Assistance: 40151000(Multiple Lines)"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Emergency : 40151024 / 40151027"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="110dp"
+                    android:text="Public Relation : 4015101 / 40151015"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="145dp"
+                    android:text="ICU : 40151155 / 40151152"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="175dp"
+                    android:text="Pharmacy : 40151041 / 40151040"
+                    android:textSize="18sp"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+                <EditText
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Super Speciality Building">
+                </EditText>
+                <TextView
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Operator Assistance : 020 40153000 "
+                    android:textSize="18sp">
+
+                </TextView>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Blood Bank : 4913009 "
+                    android:textSize="18sp">
+
+                </TextView>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="130dp"
+                    android:text="ICU : 49153483 / 49153484 "
+                    android:textSize="18sp">
+
+                </TextView>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Pharmacy : 49153009"
+                    android:textSize="18sp">
+
+                </TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Important Guidelines: "></EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="90dp"
+                    android:text="* To facilitate the process of Registration / Admission / Charity / Mediclaim, please ensure
+to carry patients ID proof"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="35dp"
+                    android:text="* Patient should be physically present in the hospital premises at the time of admission"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:text="* Patients are advised do not keep any valuables, jewellery or other c
+                    ostl items with them during their stay at the HOspital"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp"
+                    android:text="* You can ask for room sevice for - a. Pharmacy b. Dier c.WiFi"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="280dp"
+                        android:textSize="18sp"
+                        android:text="* Please do not Smoke or Spit ."></TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

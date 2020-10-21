@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main"
+
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="HOSPITALS IN PUNE"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <ImageView
+            android:id="@+id/image_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/b2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="SEARCH"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346"></TextView>
+
+    <LinearLayout
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.412"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light">
+
+            <Button
+                android:id="@+id/buttonDisease"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/imageDisease"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="53dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginBottom="35dp"
+                android:padding="13dp"
+                android:src="@android:drawable/ic_menu_search"
+                tools:ignore="DuplicateIds"></ImageView>
+
+            <TextView
+                android:id="@+id/disease"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="78dp"
+                android:layout_marginBottom="12dp"
+                android:text="Disease"
+                android:textAlignment="center"
+
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark">
+
+            <Button
+                android:id="@+id/buttonDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/imageDoctor"
+                android:padding="13dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="53dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginBottom="35dp"
+                app:srcCompat="@drawable/doctor1"></ImageView>
+
+            <TextView
+                android:id="@+id/doctor"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="79dp"
+                android:layout_marginBottom="11dp"
+                android:text="Doctor"
+                android:textAlignment="center"
+
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="390dp"
+        android:text="INFORMATION"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.747"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark">
+
+            <Button
+                android:id="@+id/buttonFacility"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/imageFacility"
+                android:layout_width="74dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginRight="52dp"
+                android:layout_marginBottom="38dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_airport_shuttle_black_24dp"></ImageView>
+
+            <TextView
+                android:id="@+id/facility"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="75dp"
+                android:layout_marginBottom="15dp"
+                android:text="Facility"
+                android:textAlignment="center"
+
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light">
+
+            <Button
+                android:id="@+id/buttonHealth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/imageHealth"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="53dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginBottom="35dp"
+                android:padding="18dp"
+                app:srcCompat="@drawable/ic_library_add_black_24dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/health"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="76dp"
+                android:layout_marginBottom="14dp"
+                android:text="Health Package"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.959">
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light">
+
+            <Button
+                android:id="@+id/buttonIPD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/imageIPD"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="53dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginBottom="35dp"
+                android:padding="15dp"
+                app:srcCompat="@drawable/ic_airline_seat_recline_extra_black_24dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="75dp"
+                android:layout_marginBottom="15dp"
+                android:text="IPD"
+                android:textAlignment="center"
+                android:id="@+id/ipd"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark">
+
+            <Button
+                android:id="@+id/buttonOPD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/imageOPD"
+                android:layout_width="80dp"
+                android:layout_height="71dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="53dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginBottom="44dp"
+                android:padding="13dp"
+                android:src="@drawable/stethoscope">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/opd"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="74dp"
+                android:layout_marginBottom="16dp"
+                android:text="OPD"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!-- <TextView
+         android:id="@+id/search"
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:layout_marginTop="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginBottom="510dp"
+         android:text="Search"
+         android:textColor="@android:color/white"
+         android:textSize="25dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+         />
+
+     <LinearLayout
+         android:id="@+id/linearLayout2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/linearLayout"
+         app:layout_constraintVertical_bias="0.42">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:orientation="horizontal">
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="120dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="1"
+                 android:gravity="center">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:id="@+id/imageDisease"
+                         android:layout_width="80dp"
+                         android:layout_height="50dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="10dp"
+                         app:srcCompat="@drawable/ic_search_black_24dp" />
+
+                     <TextView
+                         android:id="@+id/disease"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/imageDisease"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="8dp"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginBottom="10dp"
+                         android:text="Disease"
+                         android:textSize="20sp"
+                         />
+
+                     <Button
+                         android:id="@+id/buttonDisease"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@android:color/transparent"
+                         android:onClick="oneClick"
+                         tools:ignore="Onclick" />
+
+                 </RelativeLayout>
+
+
+             </androidx.cardview.widget.CardView>
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="1"
+                 android:gravity="center"
+
+                 >
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:id="@+id/imageView3"
+                         android:layout_width="80dp"
+                         android:layout_height="50dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="10dp"
+                         android:src="@drawable/doctor1" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/imageView3"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="10dp"
+                         android:text="Doctor"
+                         android:textSize="20sp"
+                         android:textStyle="bold" />
+
+                     <Button
+                         android:id="@+id/buttonDoctor4"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@android:color/transparent"
+                         android:onClick="oneClick"
+                         tools:ignore="Onclick" />
+
+
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <ImageView
+                             android:id="@+id/imageDoctor"
+                             android:layout_width="80dp"
+                             android:layout_height="50dp"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginTop="10dp"
+                             android:src="@drawable/doctor1" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@+id/imageDoctor"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginBottom="10dp"
+                             android:text="Doctor"
+                             android:textSize="20sp"
+                             android:id="@+id/doctor"
+                             />
+
+                         <Button
+                             android:id="@+id/buttonDoctor"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:background="@android:color/transparent"
+                             android:onClick="oneClick"
+                             tools:ignore="Onclick" />
+
+
+                     </RelativeLayout>
+
+
+                 </RelativeLayout>
+
+
+             </androidx.cardview.widget.CardView>
+
+
+         </LinearLayout>
+     </LinearLayout>
+
+     <TextView
+         android:id="@+id/text_view2"
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:layout_marginTop="330dp"
+         android:layout_marginRight="8dp"
+         android:layout_marginBottom="500dp"
+         android:text="Information"
+         android:textColor="@android:color/white"
+         android:textSize="25dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+         app:layout_constraintVertical_bias="0.42000002">
+
+     </TextView>
+
+     <LinearLayout
+         android:id="@+id/linearLayout3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="32dp"
+         android:layout_marginBottom="32dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/linearLayout"
+         app:layout_constraintVertical_bias="0.73">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:orientation="horizontal">
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="120dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:background="@android:color/black">
+
+                 <RelativeLayout
+                     android:layout_width="203dp"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:id="@+id/imageFacility"
+                         android:layout_width="80dp"
+                         android:layout_height="50dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginRight="5dp"
+                         app:srcCompat="@drawable/amb1" />
+
+                     <TextView
+                         android:id="@+id/facility"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/imageFacility"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="8dp"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginBottom="10dp"
+                         android:text="Facility"
+                         android:textSize="15sp"
+                         />
+
+                     <Button
+                         android:id="@+id/buttonFacility"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@android:color/transparent"
+                         android:onClick="oneClick"
+                         tools:ignore="Onclick" />
+
+
+                 </RelativeLayout>
+
+
+             </androidx.cardview.widget.CardView>
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="1"
+                 android:gravity="center"
+
+                 >
+
+                 <RelativeLayout
+                     android:layout_width="203dp"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                         android:id="@+id/imageHealth"
+                         android:layout_width="80dp"
+                         android:layout_height="50dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="10dp"
+                         app:srcCompat="@drawable/ic_library_add_black_24dp" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/imageHealth"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="8dp"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginBottom="10dp"
+                         android:text="Health Packages"
+                         android:textSize="15sp"
+                         android:id="@+id/health"
+                         />
+
+                     <Button
+                         android:id="@+id/buttonHealth"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@android:color/transparent"
+                         android:onClick="oneClick"
+                         tools:ignore="Onclick" />
+
+
+                 </RelativeLayout>
+
+
+             </androidx.cardview.widget.CardView>
+
+
+         </LinearLayout>
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/linearLayout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="32dp"
+         android:layout_marginBottom="32dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/linearLayout"
+         app:layout_constraintVertical_bias="0.97">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:orientation="horizontal">
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="120dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="1"
+                 android:gravity="center">
+
+                 <RelativeLayout
+                     android:layout_width="203dp"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:id="@+id/imageIPD"
+                         android:layout_width="80dp"
+                         android:layout_height="50dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                         app:srcCompat="@drawable/ic_airline_seat_recline_extra_black_24dp" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/imageIPD"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="8dp"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginBottom="10dp"
+                         android:text="IPD Guideline"
+                         android:textSize="15sp"
+                         android:id="@+id/ipd"
+                         />
+
+                     <Button
+                         android:id="@+id/buttonIPD"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@android:color/transparent"
+                         android:onClick="oneClick"
+                         tools:ignore="Onclick" />
+
+
+                 </RelativeLayout>
+
+
+             </androidx.cardview.widget.CardView>
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:layout_weight="1"
+                 android:gravity="center"
+
+                 >
+
+                 <RelativeLayout
+                     android:layout_width="203dp"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:id="@+id/imageOPD"
+                         android:layout_width="80dp"
+                         android:layout_height="50dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="5dp"
+                         app:srcCompat="@drawable/sp1" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/imageOPD"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="8dp"
+                         android:layout_marginRight="5dp"
+                         android:layout_marginBottom="10dp"
+                         android:text="OPD Guideline"
+                         android:textSize="15sp"
+                         android:id="@+id/opd"
+                         />
+
+
+                     <Button
+                         android:id="@+id/buttonOPD"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@android:color/transparent"
+                         android:onClick="oneClick"
+                         tools:ignore="Onclick" />
+
+                 </RelativeLayout>
+
+
+             </androidx.cardview.widget.CardView>
+
+
+         </LinearLayout>
+     </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

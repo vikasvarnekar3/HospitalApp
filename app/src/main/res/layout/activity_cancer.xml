@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorSpecial.Cancer"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.DASTANE ADITI MANISH"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DMH"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved2"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D2"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.KULKARNI MILIND GOPINATH"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved2"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DMH"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved2"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved3"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D3"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.MEHTA VAIBHAV SUMATILAL"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved3"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DMH"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved3"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved4"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D4"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.RAHALKAR JYOTI JAYESH"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved4"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DMH"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved4"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved5"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D5"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.SARADE GIRISH SHYAMRAO"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved5"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DMH"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved5"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved6"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D6"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.VIDHATE SHARAD BHAUSAHEB"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved6"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DMH"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved6"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved7"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D7"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.KALE ANAND VIKARM"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved7"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Aditya Birla hospital"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved7"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved8"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D8"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.THITE MANISHA"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved8"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Aditya Birla Hospital"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved8"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved9"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D9"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.Nirabjawane Vivek S."
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved9"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Cipla"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved9"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved10"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D10"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.Kulkarni Sonali R."
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved10"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Cipla"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved10"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved11"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D11"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.Chaudhari Santosh P"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved11"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Cipla"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved11"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/imageAyurved12"
+                            android:layout_width="180dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_person_black_24dp"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ayurved_D12"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="DR.Page Nivedita"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/ayurved12"
+                        android:layout_width="302dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Cipla"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/buttonAyurved12"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

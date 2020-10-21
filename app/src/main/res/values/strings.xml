@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="hospitalapp">HospitalApp</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <!--<string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>-->
+
+    <string name="name">Name :</string>
+    <string name="specilazation">Specilazation : </string>
+    <string name="workat">Workat : </string>
+
+    <string name="gender">Gender : </string>
+    <string name="check">Check Details :</string>
+
+</resources>
+

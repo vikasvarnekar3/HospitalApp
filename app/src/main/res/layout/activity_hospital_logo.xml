@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IPD.HospitalLogo"
+    android:paddingTop="10dp">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="115dp">
+
+                        <ImageView
+                            android:id="@+id/imageAditya"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/aditya"
+                            android:scaleType="centerCrop"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/aditya"
+                        android:layout_width="244dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="155dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Aditya Birla Memorial Hospital"
+                        android:textColor="@android:color/black"
+                        android:textFontWeight="2"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonAditya"
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:id="@+id/buttonAppolo"
+                            android:layout_width="153dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="oneClick"
+                            tools:ignore="Onclick" />
+
+                        <ImageView
+                            android:id="@+id/imageAppolo"
+
+                            android:layout_width="150dp"
+                            android:layout_height="115dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/apl" />
+
+
+
+                        <TextView
+                            android:id="@+id/appolo"
+                            android:layout_width="208dp"
+                            android:layout_height="124dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:text="Appolo Hospital"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageCipla"
+
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/cipla" />
+
+
+
+                        <TextView
+                            android:id="@+id/cipla"
+                            android:layout_width="248dp"
+                            android:layout_height="105dp"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:text="Cipla Hospital"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp" />
+                        <Button
+                            android:id="@+id/buttonCipla"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:onClick="oneClick"
+                            tools:ignore="Onclick" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+                    <Button
+                        android:id="@+id/buttonDeenanath"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageDeenanath"
+
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/deenanath" />
+
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/deenanath"
+                        android:layout_width="208dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Deenanath Mangeshkar Hospital"
+                        android:textColor="@android:color/black"
+
+                        android:textSize="20sp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageKem"
+
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/kem"
+                            android:scaleType="centerCrop"/>
+
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/kem"
+                        android:layout_width="233dp"
+                        android:layout_height="103dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="KEM Hospital"
+                        android:textColor="@android:color/black"
+
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/buttonKem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="115dp">
+
+                        <ImageView
+                            android:id="@+id/imageJah"
+
+                            android:layout_width="150dp"
+                            android:layout_height="115dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/jah"
+                            android:scaleType="centerCrop"/>
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/jahangir"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_width="208dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Jahangir Hospital"
+                        android:textSize="20sp"
+
+                        android:textColor="@android:color/black"/>
+
+                    <Button
+                        android:id="@+id/buttonJah"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageRuby"
+
+                            android:layout_width="150dp"
+                            android:layout_height="115dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ruby"
+                            android:scaleType="centerCrop"/>
+
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+
+                        android:id="@+id/ruby"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_width="208dp"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Ruby Hospital"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"/>
+
+                    <Button
+                        android:id="@+id/buttonRuby"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="115dp">
+
+                        <ImageView
+                            android:id="@+id/imageSancheti"
+
+                            android:layout_width="150dp"
+                            android:layout_height="115dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/sancheti"
+                            android:scaleType="centerCrop"/>
+
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/sancheti"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_width="208dp"
+                        android:layout_height="124dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Sancheti Hospital"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"/>
+
+                    <Button
+                        android:id="@+id/buttonSancheti"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:onClick="oneClick"
+                        tools:ignore="Onclick" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

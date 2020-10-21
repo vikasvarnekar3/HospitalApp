@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthPackage.rubyhealth"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/jah">
+
+            </ImageView>
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:baselineAligned="false"
+                android:text="Health Check Packages Ruby Hall Hospital"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <TextView
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="447dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* Blood Group and RH Typing"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="365dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="412dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* Urin (Routine)"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="107dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="374dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* Stool (Routine)"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="645dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Special Cost : Rs. 1500/-"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="184dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="297dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* Blood Urea"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="145dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="336dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* Sugar (Fasting and Postprandial)"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="222dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="259dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* Serum Creatinine"
+                    android:textColor="@android:color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/editText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="262dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginBottom="219dp"
+                    android:ems="10"
+                    android:text="* Uric Acid"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="400dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="179dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Private Ward                              Rs.6750.00"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="342dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginBottom="139dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* X - Ray Chest"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="413dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginBottom="68dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* 2D Echo"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="377dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="104dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* ECG"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="447dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginBottom="34dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* Consulataion by Physicial"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="304dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="177dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* SGPt"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/editText17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="477dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginBottom="4dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="* Fasting"
+                    android:textColor="@android:color/black" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
