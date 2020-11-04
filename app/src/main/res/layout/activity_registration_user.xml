@@ -47,8 +47,10 @@
         android:layout_width="390dp"
         android:layout_height="62dp"
         android:layout_margin="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="16dp"
 
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
         android:hint="Full name"
         android:inputType="text"
         android:textColor="@android:color/holo_blue_light"
@@ -76,20 +78,22 @@
         android:layout_below="@+id/register_username_admin"> </EditText>
 
     <EditText
-        android:layout_height="68dp"
-        android:layout_width="390dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
         android:id="@+id/register_email_user"
-        app:layout_constraintTop_toBottomOf="@+id/register_phone_number_user"
-        android:textColorHint="@android:color/holo_blue_light"
+        android:layout_width="390dp"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+
         android:layout_marginLeft="20dp"
-        android:inputType="textEmailAddress"
+        android:layout_marginTop="236dp"
         android:hint="Email"
-        android:layout_alignParentTop="true"> </EditText>
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/holo_blue_light"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_phone_number_user"></EditText>
 
     <EditText
         android:layout_height="64dp"
