@@ -60,7 +60,9 @@
         <activity android:name=".Login_admin" />
         <activity android:name=".Registration_admin" />
         <activity android:name=".Registration_user" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".animation"
+            tools:ignore="DuplicateActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
