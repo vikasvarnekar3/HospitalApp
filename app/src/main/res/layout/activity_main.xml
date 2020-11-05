@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:background="@android:color/white"
-    tools:context=".MainActivity"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red"
+    tools:context=".MainActivity">
+
+    <Button
+
+        android:id="@+id/registration_admin"
+        android:layout_width="233dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:background="@drawable/red1"
+        android:text="Registration  for Admin"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765">
+
+    </Button>
 
     <Button
 
@@ -16,18 +37,18 @@
         android:layout_height="73dp"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:background="#40bad5"
-        android:text="Registration form for user"
+        android:background="@drawable/red1"
+        android:text="Registration  for user"
         android:textAllCaps="true"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.878">
+        app:layout_constraintVertical_bias="0.518">
 
     </Button>
 
@@ -35,16 +56,17 @@
         android:id="@+id/welcome"
         android:layout_width="284dp"
         android:layout_height="121dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="88dp"
         android:freezesText="false"
         android:gravity="center"
-        android:text="Hospital Management"
+        android:text="HOSPITAL IN PUNE"
         android:textAllCaps="false"
-        android:textColor="#40bad5"
-        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:textColorLink="@color/black"
+        android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

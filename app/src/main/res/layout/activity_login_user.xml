@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    tools:context=".Login_admin"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@android:color/white">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red"
+    tools:context=".Login_admin">
 
     <TextView
         android:id="@+id/title2"
@@ -15,10 +14,10 @@
         android:layout_height="132dp"
         android:freezesText="false"
         android:gravity="center"
-        android:text="Hospital Management"
+        android:text="HOSPITAL IN PUNE"
         android:textAllCaps="false"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="36sp"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,13 +31,15 @@
         android:layout_width="367dp"
         android:layout_height="69dp"
         android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
         android:layout_marginTop="28dp"
         android:hint="Phone"
         android:inputType="number"
-        android:layout_margin="20dp"
 
-        android:textColor="@android:color/holo_blue_light"
-        android:textColorHint="@android:color/holo_blue_light"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,11 +52,13 @@
         android:layout_width="367dp"
         android:layout_height="66dp"
         android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:layout_margin="20dp"
-        android:textColor="@android:color/holo_blue_light"
-        android:textColorHint="@android:color/holo_blue_light"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,42 +68,46 @@
 
     <Button
 
-        android:layout_height="44dp"
-        android:layout_width="148dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textAllCaps="true"
-        android:text="Login as user"
         android:id="@+id/login_user"
-        app:layout_constraintTop_toBottomOf="@+id/login_password_user"
-        android:textStyle="bold"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
         android:layout_marginTop="48dp"
-        android:background="#40bad5"
-        android:textColor="@android:color/white"/>
+        android:background="#5E919E9E"
+        android:text="Login as user"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password_user" />
 
     <Button
         android:id="@+id/Register_here1"
         android:layout_width="293dp"
         android:layout_height="34dp"
         android:layout_marginTop="36dp"
-        android:background="@android:color/white"
+        android:background="#43232121"
         android:text="New User? Create Account"
-        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_user" />
 
     <ProgressBar
-        android:layout_height="32dp"
-        android:layout_width="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/progressBar2"
-        app:layout_constraintTop_toBottomOf="@+id/Register_here1"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="32dp"
         android:layout_marginTop="4dp"
         android:visibility="invisible"
-        style="?android:attr/progressBarStyle"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_here1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

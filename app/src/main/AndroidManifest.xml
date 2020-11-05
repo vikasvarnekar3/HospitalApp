@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     package="com.example.hospitalapp">
     <!-- add internet permission -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:fullBackupContent=""
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".animation"></activity>
         <activity android:name=".Facility.bloodbank" />
         <activity android:name=".Facility.ambulance" />
         <activity android:name=".Facility.facility" />
@@ -60,9 +59,11 @@
         <activity android:name=".Login_admin" />
         <activity android:name=".Registration_admin" />
         <activity android:name=".Registration_user" />
+
         <activity android:name=".MainActivity"/>
-        <activity android:name=".animation"
-            tools:ignore="DuplicateActivity">
+        <activity android:name=".Animation">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

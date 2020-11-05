@@ -5,15 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class animation extends AppCompatActivity
+public class Animation extends AppCompatActivity
 {
     private static int SPASH_SCREEN =4000;
-    Animation topAnim,bottomAnim;
+    android.view.animation.Animation topAnim,bottomAnim;
     TextView hospital;
     ImageView hospitallogo;
 
@@ -38,7 +37,7 @@ public class animation extends AppCompatActivity
             @Override
             public void run()
             {
-                Intent intent = new Intent(animation.this, MainActivity.class);
+                Intent intent = new Intent(Animation.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
