@@ -66,6 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/login_phone_admin"/>
 
     <CheckBox
+        android:id="@+id/showpassword1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Show Password"
@@ -76,7 +77,8 @@
         android:textSize="18sp"
         android:textStyle="bold|italic"
         tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="378dp" />
+        tools:layout_editor_absoluteY="378dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
 

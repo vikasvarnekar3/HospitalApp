@@ -3,8 +3,12 @@ package com.example.hospitalapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -25,17 +29,32 @@ public class Login_admin extends AppCompatActivity {
     Button mLoginBtn;
     TextView mCreateBtn;
     ProgressBar progressBar;
+    CheckBox showpassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_admin);
-
+        showpassword = findViewById(R.id.showpassword1);
         mphone = findViewById(R.id.login_phone_admin);
         mPassword = findViewById(R.id.login_password_admin);
         progressBar = findViewById(R.id.progressBar2);
         mLoginBtn = findViewById(R.id.login_admin);
         mCreateBtn = findViewById(R.id.Register_here1);
+
+        showpassword.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b)
+                {
+                    mPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }
+                else
+                {
+                    mPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+            }
+        });
 
         mLoginBtn.setOnClickListener(new View.OnClickListener()
         {

@@ -3,8 +3,12 @@ package com.example.hospitalapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -28,6 +32,7 @@ public class Login_user extends AppCompatActivity {
     Button mLoginBtn;
     Button mCreateBtn;
     ProgressBar progressBar;
+    CheckBox showpassword1;
 
 
     @Override
@@ -40,9 +45,22 @@ public class Login_user extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar2);
         /*button = (Button) findViewById(R.id.login_user);*/
         mLoginBtn = findViewById(R.id.login_user);
-
+        showpassword1 = findViewById(R.id.showpassword1);
         mCreateBtn = findViewById(R.id.Register_here1);
 
+        showpassword1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b)
+                {
+                    mPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }
+                else
+                {
+                    mPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+            }
+        });
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
