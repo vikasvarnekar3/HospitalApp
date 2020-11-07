@@ -18,6 +18,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hospitalapp.Model.Users;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,11 +32,12 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Login_user extends AppCompatActivity {
   /*  public Button button;*/
-    EditText mphone, mPassword;
+    EditText mEmail, mPassword;
     Button mLoginBtn;
-    Button mCreateBtn;
+    Button mCreate;
     ProgressBar progressBar;
     CheckBox showpassword1;
+    FirebaseAuth fAuth;
 
 
     @Override
@@ -40,35 +45,34 @@ public class Login_user extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_user);
 
-        mphone = findViewById(R.id.login_phone_user);
+        mEmail = findViewById(R.id.login_phone_user);
         mPassword = findViewById(R.id.login_password_user);
         progressBar = findViewById(R.id.progressBar2);
         /*button = (Button) findViewById(R.id.login_user);*/
         mLoginBtn = findViewById(R.id.login_user);
         showpassword1 = findViewById(R.id.showpassword1);
-        mCreateBtn = findViewById(R.id.Register_here1);
+        mCreate = findViewById(R.id.register);
+        fAuth = FirebaseAuth.getInstance();
 
         showpassword1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b)
-                {
+                if (b) {
                     mPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                }
-                else
-                {
+                } else {
                     mPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 }
             }
         });
+
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                final String phone = mphone.getText().toString().trim();
+                final String email = mEmail.getText().toString().trim();
                 final String password = mPassword.getText().toString().trim();
-                if (TextUtils.isEmpty(phone)) {
-                    mphone.setError("Phone id is required");
+                if (TextUtils.isEmpty(email)) {
+                    mEmail.setError("Phone id is required");
                     return;
                 }
                 if (TextUtils.isEmpty(password)) {
@@ -81,56 +85,28 @@ public class Login_user extends AppCompatActivity {
                 }
 
                 progressBar.setVisibility(View.VISIBLE);
-
-                final DatabaseReference RootRef;
-                RootRef = FirebaseDatabase.getInstance().getReference();
-                RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.child("User").child(phone).exists()) {
-                            Users userData = dataSnapshot.child("User").child(phone).getValue(Users.class);
-
-                            if (userData.getPhone_no().equals(phone)) {
-                                if (userData.getPassword().equals(password)) {
-
-                                    Toast.makeText(Login_user.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
-
-
-                                    Intent createintent = new Intent(Login_user.this, main.class);
-                                    /*Prevalent.CurrentOnlineUser =userData;*/
-                                    startActivity(createintent);
-                                    finish();
-
-
-                                } else {
-                                    Toast.makeText(Login_user.this, "Password is incorrect.", Toast.LENGTH_SHORT).show();
-                                    progressBar.setVisibility(View.INVISIBLE);
-                                }
-                            }
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(Login_user.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), main.class));
                         } else {
-                            Toast.makeText(Login_user.this, "Account with this  " + phone + "number do not exist", Toast.LENGTH_SHORT).show();
-                            Toast.makeText(Login_user.this, "You need to create a new account.", Toast.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.INVISIBLE);
+                            Toast.makeText(Login_user.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
+                });
 
+
+                mCreate.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                    public void onClick(View v) {
+                        Intent createintent = new Intent(Login_user.this, Registration_user.class);
+                        startActivity(createintent);
+                        finish();
                     }
                 });
             }
         });
-        mCreateBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                Intent createintent =new Intent(Login_user.this,Registration_user.class);
-                startActivity(createintent);
-                finish();
-            }
-        });
-
-
     }
 }

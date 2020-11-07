@@ -18,6 +18,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hospitalapp.Model.Admin;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,22 +29,24 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Login_admin extends AppCompatActivity {
-    EditText mphone,mPassword;
+    EditText mEmail,mPassword;
     Button mLoginBtn;
     TextView mCreateBtn;
     ProgressBar progressBar;
     CheckBox showpassword;
+    FirebaseAuth fAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_admin);
         showpassword = findViewById(R.id.showpassword1);
-        mphone = findViewById(R.id.login_phone_admin);
+        mEmail = findViewById(R.id.login_phone_admin);
         mPassword = findViewById(R.id.login_password_admin);
         progressBar = findViewById(R.id.progressBar2);
         mLoginBtn = findViewById(R.id.login_admin);
-        mCreateBtn = findViewById(R.id.Register_here1);
+        mCreateBtn = findViewById(R.id.textView6);
+        fAuth = FirebaseAuth.getInstance();
 
         showpassword.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -59,13 +65,12 @@ public class Login_admin extends AppCompatActivity {
         mLoginBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
 
-                final String phone = mphone.getText().toString().trim();
+                final String email = mEmail.getText().toString().trim();
                 final String password = mPassword.getText().toString().trim();
-                if (TextUtils.isEmpty(phone)) {
-                    mphone.setError("Phone id is required");
+                if (TextUtils.isEmpty(email)) {
+                    mEmail.setError("Email is Required");
                     return;
                 }
                 if (TextUtils.isEmpty(password)) {
@@ -79,57 +84,29 @@ public class Login_admin extends AppCompatActivity {
 
                 progressBar.setVisibility(View.VISIBLE);
 
-                final DatabaseReference RootRef;
-                RootRef = FirebaseDatabase.getInstance().getReference();
-                RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if(dataSnapshot.child("Admin").child(phone).exists())
-                        {
-                            Admin userData =dataSnapshot.child("Admin").child(phone).getValue(Admin.class);
-
-                            if(userData.getPhone_no().equals(phone))
-                            {
-                                if(userData.getPassword().equals(password))
-                                {
-
-                                    Toast.makeText(Login_admin.this, "Welcome admin, Logged in successfully" , Toast.LENGTH_SHORT).show();
-
-                                    finish();
-
-                                }
-                                else
-                                {
-                                    Toast.makeText(Login_admin.this, "Password is incorrect.", Toast.LENGTH_SHORT).show();
-                                    progressBar.setVisibility(View.INVISIBLE);
-                                }
-                            }
-                        }
-                        else
-                        {
-                            Toast.makeText(Login_admin.this, "Account with this  " + phone + "number do not exist", Toast.LENGTH_SHORT).show();
-                            Toast.makeText(Login_admin.this, "You need to create a new account.", Toast.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.INVISIBLE);
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(Login_admin.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), main.class));
+                        } else {
+                            Toast.makeText(Login_admin.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
+                });
 
+
+                mCreateBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError)
-                    {
-
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Login_admin.this,Registration_admin.class);
+                        startActivity(intent);
+                        finish();
                     }
                 });
             }
-        });
-        mCreateBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                Intent createintent =new Intent(Login_admin.this,Registration_admin.class);
-                startActivity(createintent);
-                finish();
-            }
-        });
+     });
 
 
     }
